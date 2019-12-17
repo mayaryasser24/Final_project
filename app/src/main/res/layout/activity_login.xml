@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/newlogin"
+    tools:context=".Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/emaill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+
+                android:drawableLeft="@drawable/round_email_white_18dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+
+                android:textColorHighlight="@color/white"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:id="@+id/passwordd"
+                android:padding="10dp"
+                android:textColorHint="@color/white"
+                android:hint="Password"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/baseline_lock_white_18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                android:background="@drawable/background_login"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:textColor="#f16f7d"
+                android:padding="16dp"
+                android:clickable="true"
+                />
+
+            <Button
+                android:background="@drawable/newlogin"
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center_horizontal"
+                android:text="New User Register"
+                android:textColorHighlight="#000000"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:onClick="gotRegistraion"
+                />
+
+            <CheckBox
+                android:id="@+id/remmeber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remmeber E-mail"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/showpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp">
+
+            </CheckBox>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
